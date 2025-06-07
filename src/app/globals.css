@@ -5,29 +5,30 @@
 
 @layer base {
 	:root {
-		--background: 30 100% 97%;
-		--foreground: 20 24.3% 4.1%;
-		--text-main: 15 33% 28%;
-		--card: 0 0% 100%;
-		--card-foreground: 20 14.3% 4.1%;
+		--background: 40 38% 96%; /* Base: #F7F3ED */
+		--foreground: 15 33% 28%; /* Text Primary: #6B4F3A */
+		--text-main: 15 33% 28%; /* Text Primary: #6B4F3A */
+		--card: 40 38% 89%; /* Area Background: #E3D9C7 */
+		--card-foreground: 15 33% 28%;
 		--popover: 0 0% 100%;
-		--popover-foreground: 20 14.3% 4.1%;
-		--primary: 40 35% 83%;
-		--primary-foreground: 60 9.1% 97.8%;
-		--secondary: 60 4.8% 95.9%;
-		--secondary-foreground: 24 9.8% 10%;
-		--muted: 60 4.8% 25.9%;
-		--muted-foreground: 25 5.3% 44.7%;
-		--accent: 60 4.8% 95.9%;
-		--accent-foreground: 24 9.8% 10%;
-		--destructive: 0 84.2% 60.2%;
-		--destructive-foreground: 60 9.1% 97.8%;
-		--border: 20 5.9% 90%;
-		--input: 20 5.9% 90%;
-		--ring: 24.6 95% 53.1%;
+		--popover-foreground: 15 33% 28%;
+		--primary: 15 19% 49%; /* Primary: #8B7E74 */
+		--primary-foreground: 40 38% 96%;
+		--secondary: 15 17% 62%; /* Text Secondary: #A08C7F */
+		--secondary-foreground: 15 33% 28%;
+		--muted: 15 17% 62%;
+		--muted-foreground: 15 17% 62%;
+		--accent: 17 32% 54%; /* Accent: #B87F64 */
+		--accent-foreground: 40 38% 96%;
+		--destructive: 0 45% 63%; /* Expense: #C87E7E */
+		--destructive-foreground: 40 38% 96%;
+		--income: 209 35% 58%; /* Income: #6A9FBF */
+		--border: 220 13% 82%; /* Border: #D1D5DB */
+		--input: 220 13% 82%;
+		--ring: 15 19% 49%;
 		--radius: 0.5rem;
-		--chart-1: 12 76% 61%;
-		--chart-2: 173 58% 39%;
+		--chart-1: 209 35% 58%; /* Income color */
+		--chart-2: 0 45% 63%; /* Expense color */
 		--chart-3: 197 37% 24%;
 		--chart-4: 43 74% 66%;
 		--chart-5: 27 87% 67%;
