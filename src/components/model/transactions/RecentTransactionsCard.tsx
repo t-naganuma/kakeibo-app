@@ -37,7 +37,7 @@ export const RecentTransactionsCard = ({
 							<div className="flex items-center space-x-4">
 								<div
 									className={`w-2 h-2 rounded-full ${
-										transaction.isIncome ? 'bg-green-500' : 'bg-red-500'
+										transaction.isIncome ? 'bg-secondary' : 'bg-destructive'
 									}`}
 								/>
 								<div className="flex-1">
@@ -49,7 +49,7 @@ export const RecentTransactionsCard = ({
 							</div>
 							<span
 								className={`text-sm font-medium ${
-									transaction.isIncome ? 'text-green-600' : 'text-red-600'
+									transaction.isIncome ? 'text-secondary' : 'text-destructive'
 								}`}
 							>
 								{transaction.isIncome ? '+' : '-'}

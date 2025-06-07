@@ -34,7 +34,7 @@ export const IncomeCard = ({
 				<CardDescription>今月の収入実績</CardDescription>
 			</CardHeader>
 			<CardContent>
-				<div className="text-3xl font-bold text-green-600">
+				<div className="text-3xl font-bold text-secondary">
 					{formatCurrency(amount)}
 				</div>
 				<p className="text-sm text-muted-foreground">

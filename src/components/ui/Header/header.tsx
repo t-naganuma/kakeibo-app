@@ -37,12 +37,12 @@ export const Header = () => {
 	};
 
 	return (
-		<header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+		<header className="sticky top-0 z-50 w-full border-b bg-primary">
 			<div className="container flex h-16 items-center justify-between px-4">
 				{/* ハンバーガーメニュー */}
 				<Sheet open={isSheetOpen} onOpenChange={setIsSheetOpen}>
 					<SheetTrigger asChild>
-						<Button variant="ghost" size="icon" className="md:hidden">
+						<Button variant="ghost" size="icon" className="lg:hidden">
 							<Menu className="h-6 w-6" />
 							<span className="sr-only">メニューを開く</span>
 						</Button>
@@ -71,7 +71,7 @@ export const Header = () => {
 				</Sheet>
 
 				{/* デスクトップ用ナビゲーション */}
-				<nav className="hidden md:flex items-center space-x-1">
+				<nav className="hidden lg:flex items-center space-x-1">
 					{menuItems.map((item) => (
 						<Button
 							key={item.type}
@@ -93,7 +93,7 @@ export const Header = () => {
 							<User className="h-4 w-4" />
 						</AvatarFallback>
 					</Avatar>
-					<span className="hidden sm:inline text-sm font-medium">
+					<span className=" hidden sm:inline text-sm font-medium">
 						田中 太郎
 					</span>
 				</div>
