@@ -9,7 +9,7 @@ import {
 	SheetTitle,
 	SheetTrigger,
 } from '@/components/ui/sheet';
-import { BarChart3, Home, Menu, Settings, User } from 'lucide-react';
+import { BarChart3, Home, LogOut, Menu, Settings, User } from 'lucide-react';
 import { useState } from 'react';
 
 type MenuType = 'home' | 'report' | 'account';
@@ -67,6 +67,24 @@ export const Header = () => {
 								))}
 							</ul>
 						</nav>
+						{/* ユーザーアバター */}
+						<div className="flex items-center justify-between space-x-2 px-2 py-6 mt-auto">
+							<div className="flex items-center">
+								<Avatar className="h-8 w-8">
+									<AvatarImage src="/placeholder.svg?height=32&width=32" />
+									<AvatarFallback>
+										<User className="h-4 w-4" />
+									</AvatarFallback>
+								</Avatar>
+								<span className=" hidden sm:inline text-sm font-medium">
+									田中 太郎
+								</span>
+							</div>
+							<Button variant="outline">
+								<LogOut className="h-6 w-6" />
+								<span className="sr-only">ログアウト</span>
+							</Button>
+						</div>
 					</SheetContent>
 				</Sheet>
 
@@ -86,16 +104,22 @@ export const Header = () => {
 				</nav>
 
 				{/* ユーザーアバター */}
-				<div className="flex items-center space-x-2">
-					<Avatar className="h-8 w-8">
-						<AvatarImage src="/placeholder.svg?height=32&width=32" />
-						<AvatarFallback>
-							<User className="h-4 w-4" />
-						</AvatarFallback>
-					</Avatar>
-					<span className=" hidden sm:inline text-sm font-medium">
-						田中 太郎
-					</span>
+				<div className="flex items-center justify-between space-x-2 px-2">
+					<div className="flex items-center">
+						<Avatar className="h-8 w-8">
+							<AvatarImage src="/placeholder.svg?height=32&width=32" />
+							<AvatarFallback>
+								<User className="h-4 w-4" />
+							</AvatarFallback>
+						</Avatar>
+						<span className=" hidden sm:inline text-sm font-medium">
+							田中 太郎
+						</span>
+					</div>
+					<Button variant="default">
+						<LogOut className="h-6 w-6" />
+						<span className="sr-only">ログアウト</span>
+					</Button>
 				</div>
 			</div>
 		</header>
