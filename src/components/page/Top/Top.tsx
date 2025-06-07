@@ -5,7 +5,7 @@ export const Top = () => {
 	return (
 		<main className="px-6">
 			<TransactionsCard />
-			<FloatingActionButton href="" />
+			<FloatingActionButton href="/transactions" />
 		</main>
 	);
 };
