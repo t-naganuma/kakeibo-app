@@ -37,12 +37,12 @@ export function createHttpClient(config: HttpClientConfig): HttpClient {
 		path: string,
 		options: RequestInit = {},
 	): Promise<Result<T, ApiError>> => {
-		try {
-			const url = `${baseUrl}${path}`;
-			const controller = new AbortController();
+		const url = path.startsWith('http') ? path : `${baseUrl}${path}`;
+		const controller = new AbortController();
+		const timeoutId = setTimeout(() => controller.abort(), timeout);
 
+		try {
 			// タイムアウト設定
-			const timeoutId = setTimeout(() => controller.abort(), timeout);
 
 			const response = await fetch(url, {
 				...options,
